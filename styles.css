@@ -1,0 +1,989 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #49485c;
+}
+
+header {
+  height: auto;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background-color: #297373;
+  color: white;
+}
+
+.footer__contenido {
+  width: 100%;
+  height: auto;
+}
+
+.titulosFooter {
+  color: white;
+  font-size: 20px;
+}
+
+.logoFooter {
+  width: 150px;
+}
+
+.descripcionFooter {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.uneteFooter {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  color: #fb625d;
+}
+
+.redesSocialesFooter {
+  height: auto;
+}
+
+.logosRedes {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.newsletterFooter {
+  height: auto;
+}
+
+#newsletter {
+  width: 300px;
+  height: 44px;
+  border-radius: 0.5rem;
+  font-size: larger;
+}
+
+#containerNav {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navbar {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.navbar-toggler {
+  border: 0px;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
+#navbarSupportedContent ul li a:hover {
+  color: #fb625d;
+}
+
+.logoMenu {
+  height: 40px;
+  grid-area: logo;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+
+.registrateBoton {
+  grid-area: registro;
+  background-color: #fb625d;
+  border: 1px solid #fb625d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.registrateBoton:hover {
+  background-color: #7f6a93;
+  border: 1px solid #7f6a93;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-shadow: 50px;
+  font-style: italic;
+}
+
+h2 {
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+  color: #f8f9fa;
+  font-size: 48px;
+}
+
+.tituloSecciones {
+  text-align: left;
+}
+
+h3 {
+  font-size: 28px;
+  color: #49485c;
+}
+
+h4 {
+  font-size: 20px;
+  color: #49485c;
+}
+
+.botonGrande {
+  width: 376px;
+  height: 60px;
+  border-radius: 22px;
+  border: #fb625d solid 2px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #fb625d;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.botonGrande:hover {
+  background-color: #fb625d;
+  color: white;
+}
+
+.botonPequeño {
+  width: 100px;
+  height: 30px;
+  border-radius: 22px;
+  border: #fb625d solid 2px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: white;
+  color: #fb625d;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.botonPequeño:hover {
+  background-color: #fb625d;
+  color: white;
+}
+
+/* ---------- MAIN ---------- */
+.botonWhatsapp {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.botonWhatsapp:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.portadaIndex {
+  margin-top: -50px;
+}
+
+.logoPortada {
+  position: absolute;
+  z-index: 1;
+  width: 650px;
+  top: 30%;
+  left: 8%;
+}
+
+.aTituloPrincipal {
+  text-decoration: none;
+  position: absolute;
+  z-index: 1;
+  left: 10%;
+  top: 60%;
+}
+
+.indexSeccion2 {
+  width: 100%;
+  height: auto;
+}
+
+.ventajaServicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenidoVentajas {
+  padding-left: 5vh;
+}
+
+.indexSeccion2__reserva--estilo {
+  width: 550px;
+  height: auto;
+  text-align: center;
+  background-color: #4c1036;
+  background-color: #5e0571;
+  background-color: #fb625d;
+  padding-bottom: 40px;
+  color: white;
+  padding-top: 50px;
+}
+
+.reserva__h3--estilo {
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  padding-bottom: 5px;
+}
+
+.article__parrafo--ubicacion {
+  width: 60%;
+  text-align: center;
+  margin-left: 20%;
+  padding-bottom: 15px;
+  font-style: italic;
+}
+
+.botonReserva {
+  margin-top: 40px;
+}
+
+.botonReserva:hover {
+  border: 2px solid white;
+}
+
+.formularioReserva {
+  height: 35px;
+  width: 250px;
+}
+
+.form {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.tratamientos {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 65px;
+  background-color: white;
+  background-color: #f8f9fa;
+}
+
+.tratamientos h2 {
+  color: #fb625d;
+  color: #b118c8;
+  color: #49485c;
+}
+
+.tratamientos h3 {
+  color: #49485c;
+}
+
+.indexTratamientos {
+  width: 100%;
+  color: #49485c;
+}
+
+.indexManos {
+  margin-top: 50px;
+  height: 401px;
+  position: relative;
+  width: 80%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.indexManos .fotoManos {
+  width: 100%;
+  height: 401px;
+  display: block;
+}
+
+.indexManos .overlay {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(251, 98, 93, 0.7);
+  overflow: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.indexManos h3 {
+  width: 100%;
+  margin-top: 25px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.indexManos p {
+  position: absolute;
+  text-align: center;
+  margin-top: 90px;
+  margin-right: 60px;
+  margin-left: 60px;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.indexManos a {
+  position: absolute;
+  text-align: center;
+  margin-top: 180px;
+  width: 100%;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.indexManos:hover .overlay {
+  height: 100%;
+}
+
+.indexManos:hover .overlay h3 {
+  margin-top: 17%;
+}
+
+.indexManos:hover .overlay p {
+  margin-top: 27%;
+}
+
+.indexManos:hover .overlay a {
+  margin-top: 42%;
+}
+
+.indexPies {
+  margin-top: 50px;
+  height: 401px;
+  position: relative;
+  width: 80%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.indexPies .fotoPies {
+  width: 100%;
+  height: 401px;
+  display: block;
+}
+
+.indexPies .overlay {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(251, 98, 93, 0.7);
+  overflow: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.indexPies h3 {
+  width: 100%;
+  margin-top: 25px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.indexPies p {
+  position: absolute;
+  text-align: center;
+  margin-top: 90px;
+  margin-right: 60px;
+  margin-left: 60px;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.indexPies a {
+  position: absolute;
+  text-align: center;
+  margin-top: 180px;
+  width: 100%;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.indexPies:hover .overlay {
+  height: 100%;
+}
+
+.indexPies:hover .overlay h3 {
+  margin-top: 17%;
+}
+
+.indexPies:hover .overlay p {
+  margin-top: 27%;
+}
+
+.indexPies:hover .overlay a {
+  margin-top: 42%;
+}
+
+.conoceTratamientos {
+  text-decoration: underline;
+  color: #7f6a93;
+  font-weight: bold;
+}
+
+#indexSeccion4 {
+  width: 100%;
+  margin-bottom: 65px;
+  margin-top: 50px;
+}
+
+.indexSeccion4__h2--ubicacion {
+  color: #49485c;
+}
+
+#testimonial {
+  padding: 55px 0px 20px;
+  color: #fff;
+  color: #999;
+  background-color: #673AB7;
+  background-color: white;
+}
+
+#testimonial h2 {
+  font-style: italic;
+  color: #fff;
+  color: #7f6a93;
+  font-size: 26px;
+  text-align: center;
+}
+
+#testimonial .client-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  margin: 0px auto;
+  border-radius: 100%;
+  position: absolute;
+  left: -10px;
+  top: 3px;
+}
+
+#testimonial .carousel-content {
+  padding: 20px 0px 20px 100px;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#testimonial h3 {
+  font-size: 17px;
+  color: #fff;
+  color: #7f6a93;
+  margin-bottom: 30px;
+  font-style: italic;
+  text-align: right;
+}
+
+#testimonial p {
+  font-size: 15px;
+}
+
+#testimonial .client-img img {
+  width: 100%;
+}
+
+#testimonial .carousel-control-prev,
+#testimonial .carousel-control-next {
+  font-size: 36px;
+}
+
+@media (max-width: 576px) {
+  #testimonial .carousel-content {
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+  }
+  #testimonial .client-img {
+    margin: 20px auto;
+    position: static;
+  }
+  #testimonial h3,
+  #testimonial p {
+    text-align: center;
+  }
+}
+
+.estadisticaColor {
+  text-align: center;
+  background-color: #3acf87;
+  color: #666;
+  width: 270px;
+  height: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #e7e9ee;
+}
+
+.estadisticaColor h2 {
+  color: #fff;
+}
+
+.estadisticaColor p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.logros__estadistica--estilo {
+  background-color: #f6f6f6;
+  text-align: center;
+  width: 270px;
+  height: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #e7e9ee;
+}
+
+.logros__estadistica--estilo h2 {
+  color: #666;
+}
+
+.logros__estadistica--estilo p {
+  color: #909090;
+  font-size: 18px;
+}
+
+.negocio {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f8f9fa;
+}
+
+.negocio h2 {
+  color: #49485c;
+}
+
+.ventajaGuru {
+  width: 22%;
+  height: auto;
+  text-align: center;
+}
+
+.imagenGuru {
+  padding-bottom: 20px;
+}
+
+.divBotonUnete {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.main--color {
+  background-color: #fb625d;
+}
+
+.h2Perfil {
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+}
+
+.conjuntoMiCuenta {
+  padding: 0;
+}
+
+.div__formTitulo--px {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.formularioMiCuenta {
+  background-color: white;
+  border: 1px solid #e7e9ee;
+  margin-bottom: 70px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.div__botonGuardarPerfil--margin {
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.div__botonGuardarPerfil--margin {
+  margin-top: 20px;
+}
+
+.reservasMiCuenta {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  border: 1px solid #e7e9ee;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mainTratamientos {
+  background-color: white;
+}
+
+.h2Tratamientos {
+  color: #7f6a93;
+  padding-top: 20px;
+}
+
+.article__botonReserva--estilo {
+  width: 80%;
+  height: 50px;
+  border-radius: 22px;
+  border: #fb625d solid 2px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #fb625d;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.article__botonReserva--estilo:hover {
+  background-color: #fb625d;
+  border: #fb625d solid 2px;
+  color: white;
+}
+
+#bellezaManos {
+  height: auto;
+  margin-top: 5vh;
+  padding-bottom: 10vh;
+}
+
+.bellezaManos__encabezado--ubicacion {
+  width: 95%;
+  height: auto;
+  line-height: 4vh;
+  padding: 0;
+}
+
+.opcionesManos {
+  padding: 0;
+}
+
+.opcionManos {
+  width: 315px;
+  height: 575px;
+  border: 1px #e7e9ee solid;
+  background-color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.opcionManos:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.ilustracionManos {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/hands.jpg);
+  background-size: cover;
+  background-position-y: 60%;
+  margin-bottom: 25px;
+}
+
+.opcionManos ul {
+  list-style-type: none;
+}
+
+.informacionManos {
+  width: 90%;
+  height: 285px;
+  padding-left: 8%;
+}
+
+.infoMargin {
+  margin-bottom: 5%;
+}
+
+#servicioPies {
+  padding-top: 90px;
+  margin-bottom: 70px;
+}
+
+#bellezaPies {
+  height: auto;
+}
+
+.bellezaPies__encabezado--ubicacion {
+  width: 95%;
+  height: auto;
+  line-height: 4vh;
+  padding: 0;
+}
+
+.opcionesPies {
+  padding: 0;
+}
+
+.opcionPies {
+  width: 315px;
+  height: 575px;
+  border: 1px solid #e7e9ee;
+  background-color: white;
+  margin-top: 40px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.opcionPies:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.ilustracionPies {
+  width: 100%;
+  height: 200px;
+  background-image: url(img/FotoPies.jpg);
+  background-size: cover;
+  margin-bottom: 25px;
+}
+
+.informacionPies {
+  width: 90%;
+  height: 285px;
+  padding-left: 8%;
+}
+
+.informacionPies ul {
+  list-style-type: none;
+}
+
+.guru {
+  background-color: white;
+}
+
+.portadaGuru {
+  padding: 0;
+}
+
+.portadaGuru__titulo--ubicacion {
+  text-align: left;
+  width: 35%;
+  margin-left: 55%;
+  padding-top: 10%;
+  top: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.subtituloGuru {
+  text-align: left;
+  width: 35%;
+  margin-left: 55%;
+  padding-top: 15px;
+  top: 320px;
+  position: absolute;
+  z-index: 1;
+}
+
+.contenedorGuru__contenido {
+  list-style: inside number;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn-secondary {
+  background-color: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  color: #49485c;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 180px;
+}
+
+.btn-secondary:hover {
+  background-color: #fb625d;
+  border: 2px solid #fb625d;
+}
+
+.hiddenCheckbox {
+  display: none;
+}
+
+.hiddenRadio {
+  display: none;
+}
+
+.botonGuru {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.appFoto {
+  text-align: center;
+  height: 947px;
+  background-image: url(img/smartphone2.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: imagen;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.contacto {
+  background-color: #fb625d;
+}
+
+.mainContacto__h2--ubicacion {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+}
+
+.conjuntoContacto {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+.mapa {
+  width: 100%;
+}
+
+.seccionMapa ul li {
+  list-style-type: none;
+}
+
+.marginFooterContacto {
+  margin-top: 70px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .appFoto {
+    display: none;
+  }
+  .ventajaGuru {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .contenidoVentajaGuru {
+    padding-left: 5vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ventajaServicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contenidoVentajas {
+    padding-left: 0;
+  }
+  .ventajaGuru {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .appFoto {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
