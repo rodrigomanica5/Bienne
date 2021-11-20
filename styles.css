@@ -118,6 +118,7 @@ footer {
 }
 
 .registrateBoton {
+  color: white;
   grid-area: registro;
   background-color: #fb625d;
   border: 1px solid #fb625d;
@@ -126,6 +127,7 @@ footer {
 }
 
 .registrateBoton:hover {
+  color: white;
   background-color: #7f6a93;
   border: 1px solid #7f6a93;
 }
@@ -916,6 +918,20 @@ h4 {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 100px;
+}
+
+.botonContacto {
+  color: white;
+  background-color: #fb625d;
+  border: 1px solid #fb625d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.botonContacto:hover {
+  color: white;
+  background-color: #7f6a93;
+  border: 1px solid #7f6a93;
 }
 
 .mapa {
