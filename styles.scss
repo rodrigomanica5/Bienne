@@ -952,6 +952,17 @@ h4 {
     margin-bottom: 100px;
 }
 
+.botonContacto {
+    background-color: #fb625d;
+    border: 1px solid #fb625d;
+    transition: all 0.5s;
+}
+
+.botonContacto:hover {
+    background-color: #7f6a93;
+    border: 1px solid #7f6a93;
+}
+
 .mapa {
     width: 100%;
 }
