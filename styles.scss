@@ -872,6 +872,7 @@ h4 {
 }
 
 .portadaGuru__titulo--ubicacion {
+    font-size: 55px;
     text-align: left;
     width: 35%;
     margin-left: 55%;
@@ -885,7 +886,7 @@ h4 {
     text-align: left;
     width: 35%;
     margin-left: 55%;
-    padding-top: 15px;
+    padding-top: 25px;
     top: 320px;
     position: absolute;
     z-index: 1;
@@ -982,6 +983,22 @@ h4 {
 // ------------------- MEDIA QUERIES -------------------
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .portadaGuru__titulo--ubicacion {
+        font-size: 30px;
+        text-align: left;
+        width: 35%;
+        margin-left: 55%;
+        top: 25px;
+    }
+    
+    .subtituloGuru {
+        font-size: 12px;
+        text-align: left;
+        width: 35%;
+        margin-left: 55%;
+        top: 160px;
+    }
+    
     .appFoto {
         display: none;
     }
@@ -999,6 +1016,21 @@ h4 {
 }
 
 @media only screen and (max-width: 768px) {
+    .portadaGuru__titulo--ubicacion {
+        font-size: 15px;
+        text-align: left;
+        width: 40%;
+        margin-left: 55%;
+        top: 10px;
+    }
+    
+    .subtituloGuru {
+        font-size: 6px;
+        text-align: left;
+        width: 35%;
+        margin-left: 55%;
+        top: 60px;
+    }
 
     .ventajaServicio {
         display: flex;
