@@ -127,8 +127,8 @@ footer {
 
 .registrateBoton:hover {
     color: white;
-    background-color: #7f6a93;
-    border: 1px solid #7f6a93;
+    background-color: #2a7270;
+    border: 1px solid #2a7270;
 }
 
 // ------------------- END NAVBAR -------------------
@@ -138,11 +138,9 @@ footer {
 }
 
 h1 {
-    font-size: 30px;
-    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     color: white;
-    text-shadow: 50px;
-    font-style: italic;
 }
 
 h2 {
@@ -223,23 +221,33 @@ h4 {
 // ------------------- INDEX PORTADA -------------------
 
 .portadaIndex {
-    margin-top: -50px;
+    margin-top: 0px;
+}
+
+// .fotoCarrusel {
+//     height: 91vh;
+// }
+
+.titulosPortada {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    top: 90%;
+    position: absolute;
+    z-index: 1;
 }
 
 .logoPortada {
     position: absolute;
     z-index: 1;
-    width: 650px;
-    top: 30%;
-    left: 8%;
+    width: 600px;
+    height: 250px;
 }
 
-.aTituloPrincipal {
-    text-decoration: none;
-    position: absolute;
-    z-index: 1;
-    left: 10%;
-    top: 60%;
+.subtituloLogo {
+    padding-left: 210px;
+    padding-top: 10px;
 }
 
 // ------------------- INDEX SECCION 2 VENTAJAS Y RESERVA -------------------
@@ -964,8 +972,8 @@ h4 {
 
 .botonContacto:hover {
     color: white;
-    background-color: #7f6a93;
-    border: 1px solid #7f6a93;
+    background-color: #2a7270;
+    border: 1px solid #2a7270;
 }
 
 .mapa {
@@ -983,6 +991,29 @@ h4 {
 // ------------------- MEDIA QUERIES -------------------
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .portadaIndex {
+        width: 100%;
+    }
+
+    .titulosPortada {
+        height: auto;
+        top: 31%;
+    }
+    
+    .logoPortada {
+        position: absolute;
+        z-index: 1;
+        width: 300px;
+        height: 125px;
+        padding-bottom: 10px;
+    }
+    
+    .subtituloLogo {
+        font-size: 10px;
+        padding-left: 100px;
+    }
+
+
     .portadaGuru__titulo--ubicacion {
         font-size: 30px;
         text-align: left;
@@ -1023,6 +1054,10 @@ h4 {
         margin-left: 55%;
         top: 5px;
     }
+
+    .titulosPortada {
+        display: none;
+    }
     
     .subtituloGuru {
         // font-size: 6px;
@@ -1042,6 +1077,16 @@ h4 {
 
     .contenidoVentajas {
         padding-left: 0;
+    }
+
+    .overlay {
+        p {
+            top: 25px;
+        }
+
+        a {
+            top: 230px;
+        }
     }
 
     .ventajaGuru {
