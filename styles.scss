@@ -137,12 +137,6 @@ footer {
     padding: 0;
 }
 
-h1 {
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
 h2 {
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
@@ -211,7 +205,7 @@ h4 {
     bottom: 20px;
     right: 20px;
     transition: all 0.5s;
-    z-index: 1;
+    z-index: 2;
 }
 
 .botonWhatsapp:hover {
@@ -220,35 +214,74 @@ h4 {
 
 // ------------------- INDEX PORTADA -------------------
 
-.portadaIndex {
-    margin-top: 0px;
+.portada {
+    background-image: url(img/header7.png);
+    overflow: hidden;
+    position: relative;
+    height: 91vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    z-index: 1;
+
+    .wave {
+        width: 100%;
+    }
+
+    .logoPortada {
+        height: 350px;
+        top: 43%;
+        background-image: url(img/biennePortada.svg);
+        z-index: 1;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    h1 {
+        top: 85%;
+        position: absolute;
+        left: 45%;
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
 }
+
+// .portadaIndex {
+//     margin-top: 0px;
+// }
+
+// .carousel-inner {
+//     overflow: hidden;
+// }
 
 // .fotoCarrusel {
 //     height: 91vh;
 // }
 
-.titulosPortada {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    top: 90%;
-    position: absolute;
-    z-index: 1;
-}
+// .titulosPortada {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column-reverse;
+//     align-items: center;
+//     top: 90%;
+//     position: absolute;
+//     z-index: 1;
+// }
 
-.logoPortada {
-    position: absolute;
-    z-index: 1;
-    width: 600px;
-    height: 250px;
-}
+// .logoPortada {
+//     position: absolute;
+//     z-index: 1;
+//     width: 600px;
+//     height: 250px;
+// }
 
-.subtituloLogo {
-    padding-left: 210px;
-    padding-top: 10px;
-}
+// .subtituloLogo {
+//     padding-left: 210px;
+//     padding-top: 10px;
+// }
 
 // ------------------- INDEX SECCION 2 VENTAJAS Y RESERVA -------------------
 
@@ -281,12 +314,11 @@ h4 {
     width: 550px;
     height: auto;
     text-align: center;
-    background-color: #4c1036;
-    background-color: #5e0571;
     background-color: #fb625d;
-    padding-bottom: 40px;
+    padding-bottom: 65px;
     color: white;
-    padding-top: 50px;
+    padding-top: 115px;
+    top: -115px;
 }
 
 .reserva__h3--estilo {
@@ -330,7 +362,6 @@ h4 {
     height: auto;
     padding-top: 50px;
     padding-bottom: 65px;
-    background-color: white;
     background-color: #f8f9fa;
 }
 
@@ -361,6 +392,7 @@ h4 {
         width: 100%;
         height: 401px;
         display: block;
+        overflow: hidden;
     }
 
     .overlay {
@@ -373,50 +405,65 @@ h4 {
         background-color: rgba(251, 98, 93, 0.7);
         overflow: hidden;
         transition: 0.5s ease;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
 
-    h3 {
-        width: 100%;
-        margin-top: 25px;
-        position: absolute;
-        text-align: center;
-        color: white;
-        transition: 0.5s ease;
-    }
+        h3 {
+            width: 70%;
+            // margin-top: 25px;
+            // position: absolute;
+            text-align: center;
+            color: white;
+            transition: 0.5s ease;
+            padding-top: 50px;
+        }
 
-    p {
-        position: absolute;
-        text-align: center;
-        margin-top: 90px;
-        margin-right: 60px;
-        margin-left: 60px;
-        color: white;
-        transition: 0.5s ease;
-    }
+        p {
+            width: 70%;
+            // position: absolute;
+            text-align: center;
+            // margin-top: 90px;
+            // margin-right: 60px;
+            // margin-left: 60px;
+            color: white;
+            transition: 0.5s ease;
+            display: none;
+        }
 
-    a {
-        position: absolute;
-        text-align: center;
-        margin-top: 180px;
-        width: 100%;
-        color: white;
-        transition: 0.5s ease;
+        a {
+            width: 70%;
+            // position: absolute;
+            text-align: center;
+            // margin-top: 180px;
+            // width: 100%;
+            color: white;
+            transition: 0.5s ease;
+            padding-bottom: 50px;
+            display: none;
+        }
     }
 }
 
 .indexManos:hover .overlay {
     height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
 
     h3 {
-        margin-top: 17%;
+        // margin-top: 17%;
     }
 
     p {
-        margin-top: 27%;
+        // margin-top: 27%;
+        // display: visible;
     }
 
     a {
-        margin-top: 42%;
+        // margin-top: 42%;
+        // display: ;
     }
 }
 
@@ -999,7 +1046,7 @@ h4 {
         height: auto;
         top: 31%;
     }
-    
+
     .logoPortada {
         position: absolute;
         z-index: 1;
@@ -1007,7 +1054,7 @@ h4 {
         height: 125px;
         padding-bottom: 10px;
     }
-    
+
     .subtituloLogo {
         font-size: 10px;
         padding-left: 100px;
@@ -1021,7 +1068,7 @@ h4 {
         margin-left: 55%;
         top: 25px;
     }
-    
+
     .subtituloGuru {
         font-size: 12px;
         text-align: left;
@@ -1029,7 +1076,7 @@ h4 {
         margin-left: 55%;
         top: 160px;
     }
-    
+
     .appFoto {
         display: none;
     }
@@ -1053,19 +1100,6 @@ h4 {
         width: 40%;
         margin-left: 55%;
         top: 5px;
-    }
-
-    .titulosPortada {
-        display: none;
-    }
-    
-    .subtituloGuru {
-        // font-size: 6px;
-        // text-align: left;
-        // width: 35%;
-        // margin-left: 55%;
-        // top: 60px;
-        display: none;
     }
 
     .ventajaServicio {
