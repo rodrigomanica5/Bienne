@@ -117,13 +117,37 @@
                 <article class="contenedorGuru__contenido col-10 col-md-10 col-xl-11 m-auto">
                     <h3>¿Qué necesitas?</h3>
                     <p>Para iniciar asegúrate de cumplir con los siguientes requisitos</p>
-                    <ol class="listaGuru">
-                        <li>Certificado de escuela técnica</li>
-                        <li>Tener teléfono celular con sistema operativo Android</li>
-                        <li>Tener datos como mínimo de 1 GB al mes para usar en la plataforma</li>
-                        <li>Prueba de antecedentes penales vigente</li>
-                        <li>Monotributo vigente</li>
-                    </ol>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn botonRequisitos btn-info" data-toggle="modal" data-target="#exampleModal3">
+                        Requisitos
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModal3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModal3Label">Requisitos</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ol class="listaGuru">
+                                        <li>Certificado de escuela técnica</li>
+                                        <li>Tener teléfono celular con sistema operativo Android</li>
+                                        <li>Tener datos como mínimo de 1 GB al mes para usar en la plataforma</li>
+                                        <li>Prueba de antecedentes penales vigente</li>
+                                        <li>Monotributo vigente</li>
+                                    </ol>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
         </div>
@@ -137,7 +161,7 @@
 
                 <article class="formGuru col-12 col-md-10 col-xl-5 offset-xl-1 m-auto p-0">
                     <h3 class="col-11 col-md-12 col-xl-12 m-auto">Acerca de ti</h3>
-                    <p class="col-11 col-md-12 col-xl-12 m-auto">Completa el siguiente formulario para comenzar la
+                    <p class="col-11 col-md-12 col-xl-12 m-auto pb-3">Completa el siguiente formulario para comenzar la
                         solicitud.
                     </p>
 
@@ -179,7 +203,8 @@
 
                         <!-- PREGUNTA 1 -->
 
-                        <p class="col-11 col-md-12 col-xl-12 m-auto">¿Cuándo es mas probable que trabajes? (Marcar todas
+                        <p class="col-11 col-md-12 col-xl-12 m-auto pt-5 pb-4">¿Cuándo es mas probable que trabajes?
+                            (Marcar todas
                             las opciones con las que te
                             identifiques)
                         </p>
@@ -208,7 +233,7 @@
 
                         <!-- PREGUNTA 2 -->
 
-                        <p class="col-11 col-md-12 col-xl-12 m-auto">¿Cuál es tu experiencia?</p>
+                        <p class="col-11 col-md-12 col-xl-12 m-auto pb-4">¿Cuál es tu experiencia?</p>
                         <div class="row col-12 col-md-12 col-xl-12 m-auto">
                             <div class="text-center col-12 col-md-6 col-xl-6 mb-3">
                                 <label for="1menos" class="btn btn-secondary"><input type="radio" class="hiddenRadio"
@@ -230,7 +255,7 @@
 
                         <!-- PREGUNTA 3 -->
 
-                        <p class="col-11 col-md-12 col-xl-12 m-auto">Medio de transporte</p>
+                        <p class="col-11 col-md-12 col-xl-12 m-auto pb-4">Medio de transporte</p>
                         <div class="row col-12 col-md-12 col-xl-12 m-auto">
                             <div class="text-center col-12 col-md-6 col-xl-6 mb-3">
                                 <label for="transporte" class="btn btn-secondary"><input type="checkbox"
@@ -296,14 +321,14 @@
             <article class="redesSocialesFooter col-8 col-md-10 col-xl-4 pb-5 text-center">
                 <h3 class="titulosFooter pb-4">Follow Us</h3>
                 <div class="logosRedes">
-                    <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.svg"
-                            alt="Instagram" width="50px" height="50px"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.svg" alt="Facebook"
-                            width="50px" height="50px"></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.svg" alt="YouTube"
-                            width="50px" height="50px"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="img/twitter.svg" alt="Twitter"
-                            width="50px" height="50px"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.svg" alt="Instagram"
+                            width="50px" height="50px" class="redSocial"></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="redSocial"><img src="img/facebook.svg"
+                            alt="Facebook" width="50px" height="50px"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="redSocial"><img src="img/youtube.svg"
+                            alt="YouTube" width="50px" height="50px"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="img/twitter.svg" alt="Twitter" width="50px"
+                            height="50px" class="redSocial"></a>
                 </div>
             </article>
 

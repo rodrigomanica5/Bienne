@@ -62,6 +62,21 @@ footer {
   height: auto;
 }
 
+.redSocial:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  -webkit-transition: linear 0.1s;
+  transition: linear 0.1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: redes;
+          animation-name: redes;
+}
+
 .logosRedes {
   width: auto;
   display: -webkit-box;
@@ -215,7 +230,7 @@ h4 {
 }
 
 .portada {
-  background-image: url(img/header7.png);
+  background-image: url(img/header7a.png);
   overflow: hidden;
   position: relative;
   height: 91vh;
@@ -224,19 +239,6 @@ h4 {
   background-repeat: no-repeat;
   padding: 0;
   z-index: 1;
-}
-
-.portada .wave {
-  width: 100%;
-}
-
-.portada .logoPortada {
-  height: 350px;
-  top: 43%;
-  background-image: url(img/biennePortada.svg);
-  z-index: 1;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .portada h1 {
@@ -342,18 +344,17 @@ h4 {
 }
 
 .indexManos {
-  margin-top: 50px;
-  height: 401px;
+  background-image: url(img/hands.jpg);
+  overflow: hidden;
   position: relative;
+  height: 401px;
   width: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-left: 0;
   padding-right: 0;
-}
-
-.indexManos .fotoManos {
-  width: 100%;
-  height: 401px;
-  display: block;
+  margin-top: 50px;
 }
 
 .indexManos .overlay {
@@ -367,37 +368,38 @@ h4 {
   overflow: hidden;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .indexManos .overlay h3 {
-  width: 100%;
-  margin-top: 25px;
-  position: absolute;
-  text-align: center;
+  margin-top: 350px;
   color: white;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
 }
 
 .indexManos .overlay p {
-  position: absolute;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 200px;
   margin-right: 60px;
   margin-left: 60px;
   color: white;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
 }
 
 .indexManos .overlay a {
-  position: absolute;
   text-align: center;
-  margin-top: 180px;
-  width: 100%;
   color: white;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  padding-bottom: 30px;
 }
 
 .indexManos:hover .overlay {
@@ -405,30 +407,31 @@ h4 {
 }
 
 .indexManos:hover .overlay h3 {
-  margin-top: 13%;
+  padding-top: 30px;
+  margin-top: 0;
 }
 
 .indexManos:hover .overlay p {
-  margin-top: 27%;
+  margin-top: 0;
 }
 
 .indexManos:hover .overlay a {
-  margin-top: 46%;
+  padding-bottom: 30px;
+  margin-top: 0;
 }
 
 .indexPies {
-  margin-top: 50px;
-  height: 401px;
+  background-image: url(img/FotoPies.jpg);
+  overflow: hidden;
   position: relative;
+  height: 401px;
   width: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-left: 0;
   padding-right: 0;
-}
-
-.indexPies .fotoPies {
-  width: 100%;
-  height: 401px;
-  display: block;
+  margin-top: 50px;
 }
 
 .indexPies .overlay {
@@ -442,37 +445,38 @@ h4 {
   overflow: hidden;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.indexPies h3 {
-  width: 100%;
-  margin-top: 25px;
-  position: absolute;
-  text-align: center;
+.indexPies .overlay h3 {
+  margin-top: 350px;
   color: white;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
 }
 
-.indexPies p {
-  position: absolute;
+.indexPies .overlay p {
   text-align: center;
-  margin-top: 90px;
+  margin-top: 200px;
   margin-right: 60px;
   margin-left: 60px;
   color: white;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
 }
 
-.indexPies a {
-  position: absolute;
+.indexPies .overlay a {
   text-align: center;
-  margin-top: 180px;
-  width: 100%;
   color: white;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  padding-bottom: 30px;
 }
 
 .indexPies:hover .overlay {
@@ -480,15 +484,17 @@ h4 {
 }
 
 .indexPies:hover .overlay h3 {
-  margin-top: 13%;
+  padding-top: 30px;
+  margin-top: 0;
 }
 
 .indexPies:hover .overlay p {
-  margin-top: 27%;
+  margin-top: 0;
 }
 
 .indexPies:hover .overlay a {
-  margin-top: 46%;
+  padding-bottom: 30px;
+  margin-top: 0;
 }
 
 .conoceTratamientos {
@@ -500,7 +506,6 @@ h4 {
 #indexSeccion4 {
   width: 100%;
   margin-bottom: 65px;
-  margin-top: 50px;
 }
 
 .indexSeccion4__h2--ubicacion {
@@ -699,7 +704,7 @@ h4 {
 }
 
 .h2Tratamientos {
-  color: #7f6a93;
+  color: #297373;
   padding-top: 20px;
 }
 
@@ -956,18 +961,12 @@ h4 {
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .portada {
-    background-image: url(img/header5.png);
+    background-image: url(img/header5a.png);
     height: 50vh;
   }
-  .portada .wave {
-    display: none;
-  }
-  .portada .logoPortada {
-    top: 60%;
-  }
   .portada h1 {
-    top: 91%;
-    left: 44%;
+    top: 92%;
+    left: 43%;
     font-size: 13.5px;
   }
   .indexSeccion2__reserva--estilo {
@@ -976,6 +975,9 @@ h4 {
   }
   .tratamientos {
     top: 0px;
+  }
+  #indexSeccion4 {
+    margin-top: 50px;
   }
   .ventajaGuru {
     display: -webkit-box;
@@ -989,9 +991,13 @@ h4 {
         -ms-flex-align: center;
             align-items: center;
     text-align: left;
+    padding-bottom: 25px;
   }
   .contenidoVentajaGuru {
     padding-left: 5vh;
+  }
+  .divBotonUnete {
+    margin-top: -25px;
   }
   .portadaGuru__titulo--ubicacion {
     font-size: 30px;
@@ -1010,37 +1016,24 @@ h4 {
   .appFoto {
     display: none;
   }
+  .seccionMapa {
+    padding-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .botonWhatsapp {
+    width: 60px;
+    height: 60px;
+  }
   .portada {
-    background-image: url(img/header5.png);
-    height: 100vh;
-  }
-  .portada .wave {
-    display: none;
-  }
-  .portada .logoPortada {
-    top: 62%;
+    background-image: url(img/header5mobile.png);
+    height: 80vh;
   }
   .portada h1 {
-    top: 75%;
+    top: 85%;
     left: 40%;
     font-size: 16px;
-  }
-  .indexSeccion2__reserva--estilo {
-    top: 0px;
-    padding-top: 50px;
-  }
-  .tratamientos {
-    top: 0px;
-  }
-  .portadaGuru__titulo--ubicacion {
-    font-size: 20px;
-    text-align: left;
-    width: 40%;
-    margin-left: 55%;
-    top: 5px;
   }
   .ventajaServicio {
     display: -webkit-box;
@@ -1055,27 +1048,29 @@ h4 {
             align-items: center;
     text-align: center;
   }
-  .contenidoVentajas {
-    padding-left: 0;
+  .indexSeccion2__reserva--estilo {
+    top: 0px;
+    padding-top: 50px;
   }
-  .overlay p {
-    top: 25px;
-    margin-right: 30px;
+  .tratamientos {
+    top: 0px;
+  }
+  .indexManos .overlay p {
     margin-left: 30px;
-  }
-  .overlay a {
-    top: 140px;
-  }
-  .indexManos:hover .overlay h3 {
-    margin-top: 13%;
-  }
-  .indexManos:hover .overlay p {
-    margin-top: 27%;
     margin-right: 30px;
-    margin-left: 30px;
   }
-  .indexManos:hover .overlay a {
-    margin-top: 46%;
+  .indexManos .overlay h3 {
+    margin-top: 400px;
+  }
+  .indexPies .overlay p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .indexPies .overlay h3 {
+    margin-top: 400px;
+  }
+  #indexSeccion4 {
+    margin-top: 50px;
   }
   .ventajaGuru {
     display: -webkit-box;
@@ -1089,9 +1084,37 @@ h4 {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    padding-bottom: 25px;
+  }
+  .contenidoVentajas {
+    padding-left: 0;
+  }
+  .divBotonUnete {
+    margin-top: -25px;
+  }
+  .portadaGuru__titulo--ubicacion {
+    font-size: 20px;
+    text-align: left;
+    width: 40%;
+    margin-left: 55%;
+    top: 5px;
+  }
+  .subtituloGuru {
+    display: none;
+  }
+  .contenedorGuru__contenido {
+    padding-right: 0;
+    padding-left: 0;
+    line-height: 30px;
   }
   .appFoto {
     display: none;
+  }
+  .seccionMapa {
+    padding-top: 50px;
+  }
+  .seccionMapa .mapa {
+    height: 300px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
