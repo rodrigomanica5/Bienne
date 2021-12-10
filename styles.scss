@@ -10,12 +10,23 @@ $var: 100%;
 $m-10: 10px;
 $p-20: 20px;
 
+$cyan: #297373;
+$blanco: white;
+$rojo: #fb625d;
+$grisclaro: #f8f9fa;
+$grisoscuro: #49485c;
+$grisborde: #e7e9ee;
+
+$poppins: 'Poppins', sans-serif;
+$firasans: 'Fira Sans', sans-serif;
+
+
 // ------------------- BODY -------------------
 
 body {
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: #49485c;
+    font-family: $poppins;
+    color: $grisoscuro;
 }
 
 // ------------------- HEADER -------------------
@@ -27,19 +38,19 @@ header {
 // ------------------- FOOTER -------------------
 
 footer {
-    font-family: 'Poppins', sans-serif;
+    font-family: $poppins;
     font-size: 14px;
-    background-color: #297373;
-    color: white;
+    background-color: $cyan;
+    color: $blanco;
 }
 
-.footer__contenido {
+.footerContenido {
     width: 100%;
     height: auto;
 }
 
 .titulosFooter {
-    color: white;
+    color: $blanco;
     font-size: 20px;
 }
 
@@ -57,7 +68,11 @@ footer {
 .uneteFooter {
     font-size: 16px;
     font-weight: bold;
-    color: #fb625d;
+    color: $rojo;
+}
+
+.uneteFooter:hover {
+    color: $blanco;
 }
 
 .redesSocialesFooter {
@@ -115,7 +130,7 @@ footer {
 }
 
 #navbarSupportedContent ul li a:hover {
-    color: #fb625d;
+    color: $rojo;
 }
 
 .logoMenu {
@@ -125,16 +140,6 @@ footer {
     margin-left: 15px;
 }
 
-.registrateBoton {
-    @extend .botonGrande:hover;
-    transition: all 0.5s;
-}
-
-.registrateBoton:hover {
-    filter: brightness(80%);
-    color: white;
-}
-
 // ------------------- END NAVBAR -------------------
 
 .container-fluid {
@@ -142,9 +147,9 @@ footer {
 }
 
 h2 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: $firasans;
     text-align: center;
-    color: #f8f9fa;
+    color: $grisclaro;
     font-size: 48px;
 }
 
@@ -164,20 +169,20 @@ h4 {
     width: 376px;
     height: 60px;
     border-radius: 22px;
-    border: #fb625d solid 2px;
+    border: $rojo solid 2px;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    color: #fb625d;
+    font-family: $poppins;
+    background-color: $blanco;
+    color: $rojo;
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.5s;
 }
 
 .botonGrande:hover {
-    background-color: #fb625d;
-    border: 2px solid #fb625d;
-    color: white;
+    background-color: $rojo;
+    border: 2px solid $rojo;
+    color: $blanco;
 }
 
 .botonPequeño {
@@ -225,8 +230,8 @@ h4 {
         position: absolute;
         left: 45%;
         font-size: 22px;
-        font-family: 'Poppins', sans-serif;
-        color: white;
+        font-family: $poppins;
+        color: $blanco;
     }
 }
 
@@ -247,26 +252,26 @@ h4 {
     padding-left: 5vh;
 }
 
-.indexSeccion2__reserva--estilo {
+.reservaIndex {
     width: 550px;
     height: auto;
     text-align: center;
-    background-color: #fb625d;
+    background-color: $rojo;
     padding-bottom: 40px;
-    color: white;
+    color: $blanco;
     padding-top: 140px;
     top: -115px;
 }
 
-.reserva__h3--estilo {
-    color: white;
+.h3Reserva {
+    color: $blanco;
     width: 50%;
     text-align: center;
     margin-left: 25%;
     padding-bottom: 5px;
 }
 
-.article__parrafo--ubicacion {
+.parrafoReserva {
     width: ($var/2)+10;
     text-align: center;
     margin-left: 20%;
@@ -279,12 +284,7 @@ h4 {
 }
 
 .botonReserva:hover {
-    border: 2px solid white;
-}
-
-.formularioReserva {
-    height: 35px;
-    width: 250px;
+    border: 2px solid $blanco;
 }
 
 .form {
@@ -299,13 +299,13 @@ h4 {
     height: auto;
     padding-top: 50px;
     padding-bottom: 65px;
-    background-color: #f8f9fa;
+    background-color: $grisclaro;
     top: -115px;
     position: relative;
 }
 
 .tratamientos h2 {
-    color: #49485c;
+    color: $grisoscuro;
 }
 
 .indexManos {
@@ -323,7 +323,7 @@ h4 {
 
     h3 {
         margin-top: 350px;
-        color: white;
+        color: $blanco;
     }
 
     p {
@@ -331,12 +331,12 @@ h4 {
         margin-top: 200px;
         margin-right: 60px;
         margin-left: 60px;
-        color: white;
+        color: $blanco;
     }
 
     a {
         text-align: center;
-        color: white;
+        color: $blanco;
         padding-bottom: 30px;
         text-decoration: underline;
         font-weight: bold;
@@ -367,7 +367,7 @@ h4 {
 
     h3 {
         margin-top: 350px;
-        color: white;
+        color: $blanco;
     }
 
     p {
@@ -375,12 +375,12 @@ h4 {
         margin-top: 200px;
         margin-right: 60px;
         margin-left: 60px;
-        color: white;
+        color: $blanco;
     }
 
     a {
         text-align: center;
-        color: white;
+        color: $blanco;
         padding-bottom: 30px;
         text-decoration: underline;
         font-weight: bold;
@@ -428,8 +428,8 @@ h4 {
     margin-bottom: 65px;
 }
 
-.indexSeccion4__h2--ubicacion {
-    color: #49485c;
+.h2Gris {
+    color: $grisoscuro;
 }
 
 // ------------------- TESTIMONIOS -------------------
@@ -437,7 +437,7 @@ h4 {
 #testimonial {
     padding: 55px 0px 20px;
     color: #999;
-    background-color: white;
+    background-color: $blanco;
 }
 
 #testimonial h2 {
@@ -511,24 +511,23 @@ h4 {
 .estadisticaColor {
     text-align: center;
     background-color: #3acf87;
-    color: #666;
     width: 270px;
     height: 250px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 1px solid #e7e9ee;
+    border: 1px solid $grisborde;
 
     h2 {
-        color: #fff;
+        color: $blanco;
     }
 
     p {
-        color: #fff;
+        color: $blanco;
         font-size: 18px;
     }
 }
 
-.logros__estadistica--estilo {
+.estadisticaEstilo {
     @extend .estadisticaColor;
     background-color: #f6f6f6;
 
@@ -549,10 +548,10 @@ h4 {
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #f8f9fa;
+    background-color: $grisclaro;
 
     h2 {
-        color: #49485c;
+        color: $grisoscuro;
     }
 }
 
@@ -573,47 +572,54 @@ h4 {
 
 // ------------------- PESTAÑA PERFIL -------------------
 
-.main--color {
-    background-color: #fb625d;
+.perfilColor {
+    background-color: $rojo;
 }
 
 .h2Perfil {
     padding-left: 0;
     padding-right: 0;
-    color: white;
+    color: $blanco;
 }
 
 .conjuntoMiCuenta {
     padding: 0;
 }
 
-.div__formTitulo--px {
+.h3Form {
     padding-top: ($p-20)-5;
     padding-bottom: ($p-20)+10;
 }
 
 .formularioMiCuenta {
-    background-color: white;
-    border: 1px solid #e7e9ee;
+    background-color: $blanco;
+    border: 1px solid $grisborde;
     margin-bottom: 70px;
     padding-bottom: 40px;
     padding-top: 30px;
 }
 
-.div__botonGuardarPerfil--margin {
-    margin-top: $m-10*2;
-    margin-right: $m-10*5;
+.genero {
+    text-align: left;
 }
 
-.div__botonGuardarPerfil--margin {
+.botonPerfilGuardar {
     margin-top: $m-10*2;
+    margin-right: $m-10*2;
+    width: 96px;
+}
+
+.botonPerfilEditar {
+    @extend .botonPerfilGuardar;
+    margin-right: 0px;
+    margin-left: $m-10*2;
 }
 
 .reservasMiCuenta {
     width: 100%;
     height: 350px;
-    background-color: white;
-    border: 1px solid #e7e9ee;
+    background-color: $blanco;
+    border: 1px solid $grisborde;
     padding-top: 50px;
     padding-bottom: 60px;
 }
@@ -625,22 +631,22 @@ h4 {
 // ------------------- PESTAÑA SERVICIOS -------------------
 
 .mainTratamientos {
-    background-color: white;
+    background-color: $blanco;
 }
 
 .h2Tratamientos {
-    color: #297373;
+    color: $cyan;
     padding-top: 20px;
 }
 
-.article__botonReserva--estilo {
+.botonReservaServicios {
     @extend .botonGrande;
     width: 80%;
     height: 50px;
     margin-left: 10%;
 }
 
-.article__botonReserva--estilo:hover {
+.botonReservaServicios:hover {
     @extend .botonGrande:hover;
 }
 
@@ -652,7 +658,7 @@ h4 {
     padding-bottom: 10vh;
 }
 
-.bellezaManos__encabezado--ubicacion {
+.encabezadoM {
     width: 95%;
     height: auto;
     line-height: 4vh;
@@ -666,8 +672,8 @@ h4 {
 .opcionManos {
     width: 315px;
     height: 575px;
-    border: 1px #e7e9ee solid;
-    background-color: white;
+    border: 1px solid $grisborde;
+    background-color: $blanco;
     transition: all 0.2s;
     margin-top: 40px;
     padding: 0;
@@ -711,8 +717,8 @@ h4 {
     height: auto;
 }
 
-.bellezaPies__encabezado--ubicacion {
-    @extend .bellezaManos__encabezado--ubicacion;
+.encabezadoP {
+    @extend .encabezadoM;
 }
 
 .opcionesPies {
@@ -743,7 +749,7 @@ h4 {
 // ------------------- PESTAÑA UNETE COMO GURÚ -------------------
 
 .guru {
-    background-color: white;
+    background-color: $blanco;
 }
 
 .portadaGuru {
@@ -771,32 +777,23 @@ h4 {
     z-index: 1;
 }
 
-.contenedorGuru__contenido {
+.requisitosGuru {
     list-style: inside number;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.botonRequisitos {
-    @extend .botonGrande:hover;
-    transition: all 0.5s;
-}
-
-.botonRequisitos:hover {
-    @extend .registrateBoton:hover;
-}
-
 .btn-secondary {
-    background-color: #f8f9fa;
-    border: 2px solid #f8f9fa;
-    color: #49485c;
+    background-color: $grisclaro;
+    border: 2px solid $grisclaro;
+    color: $grisoscuro;
     transition: all 0.5s;
     width: 180px;
 }
 
 .btn-secondary:hover {
-    background-color: #fb625d;
-    border: 2px solid #fb625d;
+    background-color: $rojo;
+    border: 2px solid $rojo;
 }
 
 .hiddenCheckbox {
@@ -815,7 +812,8 @@ h4 {
 .appFoto {
     text-align: center;
     height: 947px;
-    background-image: url(img/smartphone2.jpg);
+    height: 1089.9px;
+    background-image: url(img/phone7.png);
     background-size: cover;
     background-position: center;
 }
@@ -823,19 +821,19 @@ h4 {
 // ------------------- PESTAÑA CONTACTO -------------------
 
 .contacto {
-    background-color: #fb625d;
+    background-color: $rojo;
 }
 
-.mainContacto__h2--ubicacion {
+.tituloContacto {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
-    color: white;
+    color: $blanco;
 }
 
 .conjuntoContacto {
-    background-color: white;
+    background-color: $blanco;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 100px;
@@ -847,7 +845,8 @@ h4 {
 }
 
 .botonContacto:hover {
-    @extend .registrateBoton:hover;
+    filter: brightness(80%);
+    color: $blanco;
 }
 
 .mapa {
@@ -860,6 +859,31 @@ h4 {
 
 .marginFooterContacto {
     margin-top: 70px;
+}
+
+// ---- PESTAÑA REGISTRATE ----
+
+.pRegistrate {
+    color: #9e9e9e;
+}
+
+#terminos {
+    width: 20px;
+    height: 20px;
+}
+
+.condiciones {
+    font-size: 13px;
+    text-align: left;
+}
+
+.politicas {
+    color: $grisoscuro;
+    font-weight: bold;
+}
+
+.politicas:hover {
+    color: $grisoscuro;
 }
 
 // ------------------- MEDIA QUERIES -------------------
@@ -880,7 +904,7 @@ h4 {
 
     // ---- INDEX SECCION 2 VENTAJAS Y RESERVA ----
 
-    .indexSeccion2__reserva--estilo {
+    .reservaIndex {
         top: 0px;
         padding-top: 50px;
     }
@@ -917,21 +941,23 @@ h4 {
 
     // ---- PESTAÑA NEGOCIO GURU ----
 
-    .portadaGuru__titulo--ubicacion {
-        font-size: 30px;
-        text-align: left;
-        width: 35%;
-        margin-left: 55%;
-        top: 25px;
-    }
 
-    .subtituloGuru {
-        font-size: 12px;
-        text-align: left;
-        width: 35%;
-        margin-left: 55%;
-        top: 160px;
-    }
+
+    // .portadaGuru__titulo--ubicacion {
+    //     font-size: 30px;
+    //     text-align: left;
+    //     width: 35%;
+    //     margin-left: 55%;
+    //     top: 25px;
+    // }
+
+    // .subtituloGuru {
+    //     font-size: 12px;
+    //     text-align: left;
+    //     width: 35%;
+    //     margin-left: 55%;
+    //     top: 160px;
+    // }
 
     .appFoto {
         display: none;
@@ -972,7 +998,7 @@ h4 {
         text-align: center;
     }
 
-    .indexSeccion2__reserva--estilo {
+    .reservaIndex {
         top: 0px;
         padding-top: 50px;
     }
@@ -1045,7 +1071,7 @@ h4 {
         display: none;
     }
 
-    .contenedorGuru__contenido {
+    .requisitosGuru {
         padding-right: 0;
         padding-left: 0;
         line-height: 30px;

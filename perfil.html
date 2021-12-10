@@ -47,7 +47,7 @@
     <header>
     </header>
 
-    <main class="main--color">
+    <main class="perfilColor">
 
         <!-- ------------------- NAVBAR ------------------- -->
 
@@ -83,7 +83,7 @@
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <button type="button" class="btn registrateBoton">REGISTRATE</button>
+                <a href="registrate.html"><button type="button" class="btn botonContacto">REGISTRATE</button></a>
             </div>
         </nav>
 
@@ -103,11 +103,11 @@
 
                 <!-- MI INFORMACIÓN -->
 
-                <article class="formularioMiCuenta col-12 col-md-10 col-xl-9 text-center">
+                <article class="formularioMiCuenta col-12 col-md-10 col-xl-9">
 
                     <form action="" method="post" enctype="application/x-www-form-urlencoded">
                         <div class="row justify-content-center">
-                            <h3 class="div__formTitulo--px col-12 col-md-12 col-xl-12">Mi informacion</h3>
+                            <h3 class="h3Form col-12 col-md-12 col-xl-12 text-center">Mi informacion</h3>
                             <div class="col-10 col-md-5 col-xl-5">
                                 <input type="text" class="form-control form" placeholder="Nombre" name="nombre"
                                     required>
@@ -134,11 +134,11 @@
                             <div class="col-5 col-md-5 col-xl-2">
                                 <input type="text" class="form-control form" placeholder="C.P:" name="CP" required>
                             </div>
-                            <div class="col-10 col-md-5 col-xl-2 offset-xl-1">
+                            <div class="col-10 col-md-5 col-xl-3">
                                 <input type="number" class="form-control form" placeholder="Edad" required>
                             </div>
-                            <div class="col-10 col-md-5 col-xl-5">
-                                <label for="sexo">Sexo</label>
+                            <div class="col-10 col-md-5 col-xl-7">
+                                <label for="sexo" class="genero">Sexo</label>
                                 <div>
                                     <input type="radio" name="hombre" id="hombre" checked>
                                     <label for="hombre">Hombre</label>
@@ -146,10 +146,10 @@
                                     <label for="mujer">Mujer</label>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-12 col-xl-12">
-                                <input class="botonPequeño div__botonGuardarPerfil--margin" type="button"
-                                    value="GUARDAR">
-                                <input class="botonPequeño div__botonEditarPerfil--margin" type="button" value="EDITAR">
+                            <div class="col-12 col-md-12 col-xl-12 text-center">
+                                <input class="btn botonContacto botonPerfilGuardar" type="button"
+                                    value="Guardar">
+                                <input class="btn botonContacto botonPerfilEditar" type="button" value="Editar">
                             </div>
                         </div>
                     </form>
@@ -175,7 +175,7 @@
 
     <footer class="container-fluid">
 
-        <section class="footer__contenido row justify-content-around pt-5 m-auto">
+        <section class="footerContenido row justify-content-around pt-5 m-auto">
 
             <!-- DESCRIPCION EN FOOTER -->
 
@@ -213,7 +213,7 @@
                     especiales directamente a tu correo electrónico. </p>
                 <form action="" method="post" enctype="application/x-www-form-urlencoded">
                     <input type="email" placeholder="ejemplo@mail.com" id="newsletter" class="col-12" required>
-                    <input type="submit" value="Suscribirse" class="botonPequeño">
+                    <input type="submit" value="Enviar" class="btn botonContacto">
                 </form>
             </article>
 
