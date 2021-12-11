@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 // ------------------- VARIABLES -------------------
 
 $var: 100%;
@@ -753,28 +757,56 @@ h4 {
 }
 
 .portadaGuru {
-    padding: 0;
+    height: 91vh;
+    width: 100%;
+    position: relative;
 }
 
-.portadaGuru__titulo--ubicacion {
-    font-size: 55px;
-    text-align: left;
-    width: 35%;
-    margin-left: 55%;
-    padding-top: 10%;
-    top: 50px;
-    position: absolute;
-    z-index: 1;
+video {
+    object-fit: cover;
+    height: 91vh;
+    width: 100%;
+}
+
+.tituloGuru {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    color: $blanco;
+    top: -500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .subtituloGuru {
-    text-align: left;
-    width: 35%;
-    margin-left: 55%;
-    padding-top: 25px;
-    top: 320px;
+    @extend .tituloGuru;
+    border: 2px solid $blanco;
+    font-size: 22px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.subtituloGuru:hover {
+    background-color: $blanco;
+    color: $grisoscuro;
+    transition: 0.5s;
+}
+
+.leerMas:hover {
+    text-decoration: none;
+}
+
+.layer {
     position: absolute;
-    z-index: 1;
+    width: 100%;
+    height: 91vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contenedorGuru {
+    padding-top: 50px;
 }
 
 .requisitosGuru {
@@ -941,23 +973,9 @@ h4 {
 
     // ---- PESTAÑA NEGOCIO GURU ----
 
-
-
-    // .portadaGuru__titulo--ubicacion {
-    //     font-size: 30px;
-    //     text-align: left;
-    //     width: 35%;
-    //     margin-left: 55%;
-    //     top: 25px;
-    // }
-
-    // .subtituloGuru {
-    //     font-size: 12px;
-    //     text-align: left;
-    //     width: 35%;
-    //     margin-left: 55%;
-    //     top: 160px;
-    // }
+    .tituloGuru {
+        top: -500px;
+    }
 
     .appFoto {
         display: none;
@@ -1059,16 +1077,14 @@ h4 {
 
     // ---- PESTAÑA NEGOCIO GURU ----
 
-    .portadaGuru__titulo--ubicacion {
-        font-size: 20px;
-        text-align: left;
-        width: 40%;
-        margin-left: 55%;
-        top: 5px;
+    .tituloGuru {
+        font-size: 35px;
+        top: -500px;
     }
 
     .subtituloGuru {
-        display: none;
+        font-size: 18px;
+        width: 120px;
     }
 
     .requisitosGuru {
