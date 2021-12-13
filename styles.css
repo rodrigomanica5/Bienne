@@ -664,13 +664,33 @@ h4 {
           transform: scale(1.02);
 }
 
-.ilustracionManos, .ilustracionPies {
+.ilustracionManos1, .ilustracionManos2, .ilustracionManos3, .ilustracionManos4, .ilustracionManos5, .ilustracionManos6, .ilustracionPies1, .ilustracionPies2, .ilustracionPies3, .ilustracionPies4 {
   width: 100%;
   height: 200px;
-  background-image: url(img/hands.jpg);
+  background-image: url(img/manosexpress.jpg);
   background-size: cover;
   background-position-y: 60%;
   margin-bottom: 25px;
+}
+
+.ilustracionManos2 {
+  background-image: url(img/manosclasica.jpg);
+}
+
+.ilustracionManos3 {
+  background-image: url(img/spadelujo.jpg);
+}
+
+.ilustracionManos4 {
+  background-image: url(img/manossemipermanente.jpg);
+}
+
+.ilustracionManos5 {
+  background-image: url(img/manosgel.jpg);
+}
+
+.ilustracionManos6 {
+  background-image: url(img/manosesculpidas.jpg);
 }
 
 .opcionManos ul, .opcionPies ul {
@@ -705,8 +725,20 @@ h4 {
           transform: scale(1.02);
 }
 
-.ilustracionPies {
-  background-image: url(img/FotoPies.jpg);
+.ilustracionPies1 {
+  background-image: url(img/piesbasica.jpg);
+}
+
+.ilustracionPies2 {
+  background-image: url(img/spapies.jpg);
+}
+
+.ilustracionPies3 {
+  background-image: url(img/piessemipermanente.jpg);
+}
+
+.ilustracionPies4 {
+  background-image: url(img/piesnoesmalte.jpg);
 }
 
 .informacionPies ul {
